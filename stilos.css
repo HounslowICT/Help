@@ -38,24 +38,25 @@ body {
 @media only screen and (max-width:600px) {
     .main-nav {
         font-size: 0.7em;
-        padding: 0;
+        padding: 3px;
     }
 
     .grid-wrapper {
-        margin-top: 100px 30px;
-        padding: 30px;
+        width: 80%;
+        margin-top: 70px 15px;
+        padding: 13px;
         display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)) ;
+        grid-gap: 3px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) ;
     }
 
     .box {
-        padding: 60px;
-        margin: 20px;
+        padding: 5px;
+        margin: 3px;
     }
 
     .box > img {
-        width:50%;
+        width:15%;
     }
 }
 
@@ -80,10 +81,10 @@ a {
 /* GRID */
 .grid-wrapper {
     margin-top: 200px;
-    padding: 50px;
+    padding: 10px;
     display: grid;
-    grid-gap: 40px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)) ;
+    grid-gap: 1px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) ;
 }
 
 a > img {
@@ -96,9 +97,15 @@ a > img {
 
 .box {
     background-color: #e5ecee;
-    padding: 50px;
-    margin: 20px;
+    padding: 15px;
+    margin: 5px;
     cursor:pointer;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(100, 185, 14);
 }
 
 .green {
@@ -112,13 +119,13 @@ a > img {
     color: #bbb
 }
 
-.footer {
+/* .footer {
     background-color: rgb(50, 49, 49);
     color: #bbb;
     font-size: 30px;
     display: flex;
     align-items: center;
-}
+} */
 
 .blue {
     background-color: rgb(230, 237, 239);
@@ -129,12 +136,6 @@ a > img {
     justify-content: center;
 } */
 
-.titulo{
-    text-align: center;
-    font-size: 30px;
-    color: rgb(100, 185, 14);
-}
-
 .push {
     margin-left: auto;
 }
@@ -143,6 +144,34 @@ footer {
     margin-top: 30px;
     height: 80px;
     display: flex;
-    align-content: center;
+    font-size: 25px;
+    align-items: center;
     justify-content: center;
 }
+
+.slide-fwd-center:hover {
+	-webkit-animation: slide-fwd-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: slide-fwd-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+
+
+ @-webkit-keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  @keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
